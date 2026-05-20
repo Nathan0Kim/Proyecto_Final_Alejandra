@@ -1,0 +1,7 @@
+{
+  "name": "Choconinos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
