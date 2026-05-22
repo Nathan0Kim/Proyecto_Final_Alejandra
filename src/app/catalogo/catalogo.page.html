@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Catalogo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Catalogo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<div class = "contenedor">
+<ion-list>
+  <ion-item *ngFor = "let e of ejemplo_array">
+<ion-avatar>
+  <img [src] = "e.imagen">
+
+</ion-avatar>
+<ion-label>
+  <h2> {{ e.name }} </h2>
+  <p> {{ e.precio }} </p>
+  <a [href]="e.url">Ver producto</a>
+</ion-label>
+  </ion-item>
+</ion-list>
+
+</div>

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>SplashScreen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">SplashScreen</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<ion-content>
+<div class ="app-splash-screen" [ngStyle]="{left: windowWidth}">
+  <div class="app-splash-screen-inner">
+<div class = "app-logo"><ion-icon name = "heart-outline"></ion-icon></div>    
+<div class = "app-label">My app</div>
+<div class = "app-loader"></div>
+
+
+  </div>
+  </div>
+
+</ion-content>

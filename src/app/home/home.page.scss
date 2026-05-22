@@ -1,0 +1,34 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+:host {
+  display: block;
+}
+
+ion-content {
+  --background: url('https://imgs.search.brave.com/iXcHnjE2s5VKSPZAKYlPHuIb_Z_p5_omVsGr1cmLono/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWJv/cmRlbWV4Lm14L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA5/L2xhcy1wYWxldGFz/LWhlbGFkYXMtbWFz/LWZhY2lsZXMtZGVs/LW11bmRvLWRhbm9u/aW5vcy1jb25nZWxh/ZG9zLWN1YmllcnRv/cy1kZS1jaG9jb2xh/dGUuanBn') center / cover no-repeat fixed;
+}

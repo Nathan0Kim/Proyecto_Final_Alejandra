@@ -1,0 +1,11 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+ion-list {
+    width: 120%;
+    max-width: 400px;
+}
