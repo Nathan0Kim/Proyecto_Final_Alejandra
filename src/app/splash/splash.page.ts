@@ -11,7 +11,7 @@ windowWidth: string='';
 showSplash: boolean = true;
 
   constructor(private router:Router) {
-    setTimeout(()=>this.router.navigate(['/home']),3000);
+    setTimeout(()=>this.router.navigate(['/home']),1500);
     
 
    }
