@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      CRUD Productos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- FORMULARIO -->
+
+  <ion-card>
+
+    <ion-card-content>
+      <ion-label>Nombre del producto: </ion-label>
+      <ion-input color="primary" [(ngModel)]="nombre"></ion-input>
+
+      <ion-label>Precio: </ion-label>
+      <ion-input color="primary" type="number" [(ngModel)]="precio">
+      </ion-input>
+
+       <ion-label>Descripción: </ion-label>
+      <ion-input color="primary" [(ngModel)]="descripcion">
+      </ion-input>
+
+      <br>
+
+      <ion-button expand="block" color="success" (click)="guardar()">
+
+        {{ editando ? 'Actualizar' : 'Agregar' }}
+
+      </ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <!-- LISTADO -->
+
+  <ion-list>
+
+    <ion-item *ngFor="let p of productos">
+
+      <ion-label>
+
+        <h2>{{ p.nombre }}</h2>
+        <p>$ {{ p.precio }}</p>
+        <p>{{ p.descripcion }}</p>
+
+      </ion-label>
+
+      <!-- EDITAR -->
+
+      <ion-button
+        fill="clear"
+        color="warning"
+        (click)="editar(p)">
+
+        <ion-icon name="create"></ion-icon>
+
+      </ion-button>
+
+      <!-- ELIMINAR -->
+
+      <ion-button
+        fill="clear"
+        color="danger"
+        (click)="eliminar(p.id)">
+
+        <ion-icon name="trash"></ion-icon>
+
+      </ion-button>
+
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
